@@ -26,3 +26,7 @@ urlpatterns = [
 ]
 
 urlpatterns += static (settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+urlpatterns += [
+    path('catalog/', include('catalog.urls')),
+]
